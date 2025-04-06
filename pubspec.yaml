@@ -1,0 +1,29 @@
+name: radiowebradio
+description: RadioWebRadio - Il player radio globale in tasca! 
+
+publish_to: 'none'  # Modificato da 'Gabriarcu' a 'none' (a meno che non sia un repository valido)
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  just_audio: ^0.9.34
+  http: ^0.13.5
+  flutter_svg: ^2.0.7
+  provider: ^6.0.5
+  marquee: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/wave.gif
+    - assets/images/default_radio.png
