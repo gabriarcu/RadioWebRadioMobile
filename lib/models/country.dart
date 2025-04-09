@@ -2,18 +2,22 @@ class Country {
   final String code;
   final String name;
 
-  const Country({
+  Country({
     required this.code,
     required this.name,
   });
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Country &&
-          runtimeType == other.runtimeType &&
-          code == other.code;
+  factory Country.fromJson(Map<String, dynamic> json) {
+    return Country(
+      code: json['code'] ?? '',
+      name: json['name'] ?? '',
+    );
+  }
 
-  @override
-  int get hashCode => code.hashCode;
+  Map<String, dynamic> toJson() {
+    return {
+      'code': code,
+      'name': name,
+    };
+  }
 }
