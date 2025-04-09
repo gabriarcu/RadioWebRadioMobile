@@ -1,0 +1,58 @@
+name: flutter_radio_player
+description: "Un'app Flutter per la riproduzione di stazioni radio."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  
+  # Gestione dello stato
+  provider: ^6.1.1
+  
+  # Riproduzione audio
+  just_audio: ^0.9.36
+  just_audio_background: ^0.0.1-beta.11
+  
+  # Gestione HTTP e API
+  http: ^1.1.2
+  dio: ^5.4.0
+  
+  # Persistenza dati
+  shared_preferences: ^2.2.2
+  
+  # UI Components
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.1
+  marquee: ^2.2.3
+  
+  # Utilità
+  path_provider: ^2.1.2
+  intl: ^0.19.0
+  url_launcher: ^6.2.2
+  connectivity_plus: ^5.0.2
+  
+  # HLS Streaming (equivalente a hls.js)
+  video_player: ^2.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+  
+  # Rimuoviamo il riferimento al font FontAwesome che non abbiamo
+  # fonts:
+  #   - family: FontAwesome
+  #     fonts:
+  #       - asset: assets/fonts/FontAwesome.ttf
